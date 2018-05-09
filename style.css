@@ -1,0 +1,13 @@
+.cloth{
+  display: block;
+  text-align: center;
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+body{
+  margin: auto;
+}
