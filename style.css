@@ -36,9 +36,7 @@
 }
 body{
   margin: auto;
-  color: white;
   background-color: black;
-  color: white;
   background-size: 50%;
   background: linear-gradient(180deg, black 20%, white 10%);
 }
