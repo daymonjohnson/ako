@@ -19,7 +19,7 @@
     </div>
   </header>
 
-
+<!-- Tops -->
     <div class="Products">
         <div class="top">
             <img src="replshirt.jpg"><br>
@@ -48,5 +48,144 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <div id="testing_"></div>
 
+<!-- Bottoms -->
+<div class="Products">
+        <div class="bottoms1">
+            <img src="russelpants.jpg"><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius numquam iusto mollitia molestiae omnis hic doloribus tempora voluptates exercitationem suscipit minus minima quibusdam, iste pariatur, esse voluptatem nihil consequatur fugit!</p><br>
+            <h2>$520</h2>
+            <button onclick="cart.add('White jeans', 520)">Add to cart</button>
+        </div>
+        <div class="bottoms2">
+            <img src="pants2.jpg"><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laboriosam cumque odio. Earum rerum quisquam rem quos ullam, aspernatur ut cupiditate debitis ipsam ducimus nihil velit. Aperiam repudiandae molestiae consectetur?</p>
+            <h2>$395</h2>
+            <button onclick="cart.add('Black Jogger Jeans',395)">Add to cart</button>
+        </div>
+        <div class="bottoms3">
+            <img src="pants3.jpg"><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem inventore enim quibusdam? Quos voluptas ipsa hic facilis, quam quaerat eum earum sunt, autem perspiciatis, ut saepe. Unde ut culpa quae!</p>
+            <h2>$479</h2>
+            <button onclick="cart.add('Camo pants',479)">Add to cart</button>
+        </div>
+        <div class="bottoms4"></div>
+            <img src="pants4.jpg"><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequatur ipsa exercitationem omnis inventore aliquam, minima modi id eos voluptates doloremque ratione voluptatem perferendis est eum iusto, illum neque odit!</p>
+            <h2>$1200</h2>
+            <button onclick="cart.add('Jeans with zipper technology',1200)">Add to cart</button>
+        </div>
+        <!-- Shoes -->
+        <div class="Products">
+                <div class="shoes1">
+                    <img src="jordans.jpg"><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius numquam iusto mollitia molestiae omnis hic doloribus tempora voluptates exercitationem suscipit minus minima quibusdam, iste pariatur, esse voluptatem nihil consequatur fugit!</p><br>
+                    <h2>$800</h2>
+                    <button onclick="cart.add('Jordan Shoe',800)">Add to cart</button>
+                </div>
+                <div class="shoes2">
+                    <img src="shoes2.jpg"><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laboriosam cumque odio. Earum rerum quisquam rem quos ullam, aspernatur ut cupiditate debitis ipsam ducimus nihil velit. Aperiam repudiandae molestiae consectetur?</p>
+                    <h2>$520</h2>
+                    <button onclick="cart.add('Gucci Sandal',520)">Add to cart</button>
+                </div>
+                <div class="shoes3">
+                    <img src="shoes3.jpg"><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem inventore enim quibusdam? Quos voluptas ipsa hic facilis, quam quaerat eum earum sunt, autem perspiciatis, ut saepe. Unde ut culpa quae!</p>
+                    <h2>$1,200</h2>
+                    <button onclick="cart.add('Gold Shoe', 1200)">Add to Cart</button>
+                </div>
+                <div class="shoes4"></div>
+                    <img src="shoes4.jpg"><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequatur ipsa exercitationem omnis inventore aliquam, minima modi id eos voluptates doloremque ratione voluptatem perferendis est eum iusto, illum neque odit!</p>
+                    <h2>$495</h2>
+                    <button onclick="cart.add('Lonzo BBB Shoe',495">Add to cart</button>
+                </div>
+
+                <!-- Cart -->
+    </header>
+    <h1>Your Cart</h1>
+    <table>
+        <th>
+            <td>Item</td>
+            <td>Price</td>
+        </th>
+        <tr>
+            <td>Subtotal: </td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>Sales Tax: </td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>Total: </td>
+            <td>x</td>
+        </tr>
+    </table>
+    <button><a href="checkout.html">Checkout</a></button></br>
+    <button><a href="index.html">Shopping</a></button>
+
+
+
+<!-- Checkout -->
+    <h1>Checkout</h1>
+    <h3>Paying with Cash</h3>
+    <span>Total: $</span><span class="total">x</span></br>
+    <input type="text" id="cashPaid" placeholder="Amount tendered"/> 
+    <button class="submitCash" id="submitcash">Submit</button></br>
+    <span>Change: </span><span class="change"></span>
+    </br>
+    <h3>Paying with Card</h3>
+    <input type="text" placeholder="Card number" maxlength="16"/>
+    <p>Expiration Date</p>
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+    <select>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+    </select>
+    <input type="text" placeholder="CVV"  maxlength="3"/></br>
+    <button class="submitCredit">Submit</button>
+    <div class="receipt">
+        <h3>Receipt</h3>
+        <table>
+                <th>
+                    <td>Item</td>
+                    <td>Price</td>
+                </th>
+                <tr>
+                    <td>Subtotal: </td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Sales Tax: </td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Total: </td>
+                    <td>x</td>
+                </tr>
+            </table></br>
+            <span>Paid with </span><span class="paymentType"></span>
+            <p>Thanks for shopping at AKO!</p>
+    </div>
+    <div id="testing_"></div>
 </body>
 </html>

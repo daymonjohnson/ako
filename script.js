@@ -24,6 +24,7 @@ class Cart {
     }
     add(n, p) {
         let newItem = new Item(n, p);
+        sessionStorage.setItem("newItem","`${new Item(n, p)}`");
         this.cart.push(newItem);
         let i = this.cart.indexOf(newItem);
         console.log("Hi");
@@ -33,12 +34,12 @@ class Cart {
         $(`#Item${i}`).text(`${x}`);
         // this.calcTotal();
     }
-    // calcTotal() {
-    //     let x = this.printName();
-    //     $("th").append("<tr id=`Row${i}`></tr>");
-    //     $(`#Row${i}`).append("<td id=`Item${i}`></td>");
-    //     $(`#Item${i}`).text(`${x}`);
-    // }
+    calcTotal() {
+        let x = newItem.printName();
+        $("th").append("<tr id=`Row${i}`></tr>");
+        $(`#Row${i}`).append("<td id=`Item${i}`></td>");
+        $(`#Item${i}`).text(`${x}`);
+    }
 }
 
 class Item {
