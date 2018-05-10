@@ -13,13 +13,13 @@
     </div>
 
     <h1>Checkout</h1>
-    <p>Paying with Cash</p>
+    <h3>Paying with Cash</h3>
     <span>Total: $</span><span class="total">x</span></br>
     <input type="text" id="cashPaid" placeholder="Amount tendered"/> 
-    <button class="submit" id="submitcash">Submit</button></br>
+    <button class="submitCash" id="submitcash">Submit</button></br>
     <span>Change: </span><span class="change"></span>
     </br>
-    <p>Paying with Card</p>
+    <h3>Paying with Card</h3>
     <input type="text" placeholder="Card number" maxlength="16"/>
     <p>Expiration Date</p>
     <select>
@@ -46,7 +46,7 @@
             <option>24</option>
     </select>
     <input type="text" placeholder="CVV"  maxlength="3"/></br>
-    <button class="submit">Submit</button>
+    <button class="submitCredit">Submit</button>
     <div class="receipt">
         <h3>Receipt</h3>
         <table>
@@ -67,9 +67,10 @@
                     <td>x</td>
                 </tr>
             </table></br>
-            <span>Paid with</span><span class="paymentType"></span>
+            <span>Paid with </span><span class="paymentType"></span>
             <p>Thanks for shopping at AKO!</p>
     </div>
+    <div id="testing_"></div>
     <script src="script.js"></script>
 </body>
 

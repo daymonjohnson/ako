@@ -8,8 +8,13 @@ $(document).ready(function(){
     let change = (total - paid);
     $(".change").text(`$${change}`);
     });
-    $(".submit").on("click", function() {
+    $(".submitCash").on("click", function() {
         $(".receipt").show();
+        $(".paymentType").text("cash.");
+    })
+    $(".submitCredit").on("click", function() {
+        $(".receipt").show();
+        $(".paymentType").text("card.");
     })
 });
 
@@ -20,7 +25,20 @@ class Cart {
     add(n, p) {
         let newItem = new Item(n, p);
         this.cart.push(newItem);
+        let i = this.cart.indexOf(newItem);
+        console.log("Hi");
+        let x = newItem.printName();
+        $("th").append("<tr id=`Row${i}`></tr>");
+        $(`#Row${i}`).append("<td id=`Item${i}`></td>");
+        $(`#Item${i}`).text(`${x}`);
+        // this.calcTotal();
     }
+    // calcTotal() {
+    //     let x = this.printName();
+    //     $("th").append("<tr id=`Row${i}`></tr>");
+    //     $(`#Row${i}`).append("<td id=`Item${i}`></td>");
+    //     $(`#Item${i}`).text(`${x}`);
+    // }
 }
 
 class Item {
@@ -28,10 +46,26 @@ class Item {
         this.name = name;
         this.price = price;
     }
+    printName() {
+        return this.name;
+    }
+    printPrice() {
+        return this.price;
+    }
 }
-let cashText = $("#cashPaid")
+
+let c = new Cart;
+
+
 //span items and p tags fadein
 $(()=>{
   $("span").hide().fadeIn(1700);
   $("p").hide().fadeIn(3000);
+});
+
+// $("#testing").click(function(){
+//     $("#testing_").data("greeting", "Hello World");
+// });
+// $("#submitCash").click(function(){
+//     alert($("testing_").data("greeting"));
 });
