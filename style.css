@@ -54,14 +54,49 @@
 }
 body{
   margin: auto;
-  color: white;
   background-color: black;
-  color: white;
-  background-size: 50%;
   background: linear-gradient(180deg, black 20%, white 10%);
 }
 
 a{
   text-decoration: none;
   color: black;
+}
+@media only screen and (min-width: 600px) {
+  .cloth{
+    display: inline-block;
+    color: white;
+    background-color: white;
+    padding: 10px;
+  }
+  #logo{
+    width: 10%;
+    background-color: black;
+  }
+  img{
+    width: 100%;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .tops{
+    width: 45%;
+  }
+  .item2{
+    width: 35%;
+  }
+  .item3{
+    width: 35%;
+  }
+  .featuredItems{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+  }
+  .cloth:hover{
+    background-color: #A9A9A9;
+  }
 }
