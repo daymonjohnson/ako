@@ -24,21 +24,16 @@ class Cart {
     }
     add(n, p) {
         let newItem = new Item(n, p);
-        sessionStorage.setItem("newItem","`${new Item(n, p)}`");
         this.cart.push(newItem);
         let i = this.cart.indexOf(newItem);
-        console.log("Hi");
+
         let x = newItem.printName();
-        $("th").append("<tr id=`Row${i}`></tr>");
-        $(`#Row${i}`).append("<td id=`Item${i}`></td>");
-        $(`#Item${i}`).text(`${x}`);
-        // this.calcTotal();
+        let y = newItem.printPrice();
+        $("th").before('<tr><td>'+x+'</td><td>$'+y+'</td></tr>');
+
+
     }
-    calcTotal() {
-        let x = newItem.printName();
-        $("th").append("<tr id=`Row${i}`></tr>");
-        $(`#Row${i}`).append("<td id=`Item${i}`></td>");
-        $(`#Item${i}`).text(`${x}`);
+    calcSubtotal() {
     }
 }
 
@@ -55,6 +50,7 @@ class Item {
     }
 }
 
+
 let c = new Cart;
 
 
@@ -69,4 +65,4 @@ $(()=>{
 // });
 // $("#submitCash").click(function(){
 //     alert($("testing_").data("greeting"));
-});
+// });
