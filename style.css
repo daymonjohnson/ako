@@ -55,6 +55,10 @@
 body{
   margin: auto;
   background-color: black;
+<<<<<<< HEAD
+=======
+  background-size: 50%;
+>>>>>>> cd14db8409d5e83d83a936d9fe4f6f01d75c97dc
   background: linear-gradient(180deg, black 20%, white 10%);
 }
 

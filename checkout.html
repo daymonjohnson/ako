@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -13,10 +14,10 @@
 
     <h1>Checkout</h1>
     <p>Paying with Cash</p>
-    <p>Total: $</p><span class="total"></span>
-    <input type="text" id="cashPaid" placeholder="Amount tendered" /> 
-    <button>Submit</button>
-    <p>Change: $</p><span class="change"></span>
+    <span>Total: $</span><span class="total">x</span></br>
+    <input type="text" id="cashPaid" placeholder="Amount tendered"/> 
+    <button class="submit" id="submitcash">Submit</button></br>
+    <span>Change: </span><span class="change"></span>
     </br>
     <p>Paying with Card</p>
     <input type="text" placeholder="Card number" maxlength="16"/>
@@ -45,8 +46,31 @@
             <option>24</option>
     </select>
     <input type="text" placeholder="CVV"  maxlength="3"/></br>
-    <button>Submit</button>
-
+    <button class="submit">Submit</button>
+    <div class="receipt">
+        <h3>Receipt</h3>
+        <table>
+                <th>
+                    <td>Item</td>
+                    <td>Price</td>
+                </th>
+                <tr>
+                    <td>Subtotal: </td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Sales Tax: </td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Total: </td>
+                    <td>x</td>
+                </tr>
+            </table></br>
+            <span>Paid with</span><span class="paymentType"></span>
+            <p>Thanks for shopping at AKO!</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
