@@ -11,13 +11,15 @@
   <a  href="index.html"><img id="logo" src="akologo.png"></a>
     <div class="navBar">
         <span class="cloth"><a href="index.html">Home</a></span>
-        <span class="cloth"><a  href="akotops.html">Tops</a></span>
-        <span class="cloth"><a href="akobottoms.html">Bottoms</a></span>
-        <span class="cloth"><a href="akoshoes.html">Shoes</a></span>
+        <span class="cloth"><a  href="#Tops">Tops</a></span>
+        <span class="cloth"><a href="#Bottoms">Bottoms</a></span>
+        <span class="cloth"><a href="#Shoes">Shoes</a></span>
+        <span class="cloth"><a href="#Cart">Cart</a></span>
     </div>
   </header>
 
 <!-- Tops -->
+<a name="Tops">
     <div class="Products">
         <div class="top">
             <img src="replshirt.jpg"><br>
@@ -45,8 +47,10 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <div id="testing_"></div>
+        </a>
 
 <!-- Bottoms -->
+<a name="Bottoms">
 <div class="Products">
         <div class="bottoms1">
             <img src="russelpants.jpg"><br>
@@ -72,7 +76,9 @@
             <h2>$1200</h2>
             <button onclick="c.add('Jeans with zipper technology',1200)">Add to cart</button>
         </div>
+    </a>
         <!-- Shoes -->
+    <a name="Shoes">
         <div class="Products">
                 <div class="shoes1">
                     <img src="jordans.jpg"><br>
@@ -98,17 +104,18 @@
                     <h2>$495</h2>
                     <button onclick="c.add('Lonzo BBB Shoe',495)">Add to cart</button>
                 </div>
-
+            </a>
                 <!-- Cart -->
     </header>
+    <a name="Cart">
+<div class="endOfPage"></div>
     <h1>Your Cart</h1>
-    <h3>Item  Price</h3>
     <table>
-        <th>
-            <td></td>
-            <td></td>
-        </th>
         <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr class="firstRow">
             <td>Subtotal: </td>
             <td class="subTotal"></td>
         </tr>
@@ -122,20 +129,49 @@
         </tr>
     </table>
     <button id="checkout">Checkout</button></br>
-
+</a>
+<!-- Receipt -->
+<div class="receipt">
+        <h3>Receipt</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="it">Item</td>
+                    <td class="pr">Price</td>
+                </tr>
+                <tr id="firstRow">
+                    <td>Subtotal: </td>
+                    <td class="subTotal"></td>
+                </tr>
+                <tr>
+                    <td>Sales Tax: </td>
+                    <td class="tax"></td>
+                </tr>
+                <tr>
+                    <td>Total: </td>
+                    <td class="finalTotal"></td>
+                </tr>
+                </tbody>
+            </table></br>
+            <span>Paid with </span><span class="paymentType"></span>
+            <p>Thanks for shopping at AKO!</p>
+    </div>
+</div>
 
 
 <!-- Checkout -->
+<div class="checkoutForm">
+    <p class="exit">x</p>
     <h1>Checkout</h1>
     <h3>Paying with Cash</h3>
-    <span>Total: $</span><span class="total"></span></br>
-    <input type="text" id="cashPaid" placeholder="Amount tendered"/> 
-    <button class="submitCash" id="submitcash">Submit</button></br>
-    <span>Change: </span><span class="change"></span>
-    </br>
+    <span class="ch">Total: $</span><span class="ch total"></span></br></br>
+    <input type="text" id="cashPaid" placeholder="Amount tendered"/></br></br>
+    <button class="submitCash" id="submitcash">Submit</button></br></br>
+    <span>Change: </span><span class="change"></span></br>
+    </br></br>
     <h3>Paying with Card</h3>
-    <input type="text" placeholder="Card number" maxlength="16"/>
-    <p>Expiration Date</p>
+    <input type="text" placeholder="Card number" maxlength="16"/></br></br>
+    <label>Expiration Date:</label>
     <select>
         <option>1</option>
         <option>2</option>
@@ -158,34 +194,10 @@
             <option>22</option>
             <option>23</option>
             <option>24</option>
-    </select>
+    </select></br></br>
     <input type="text" placeholder="CVV"  maxlength="3"/></br>
     <button class="submitCredit">Submit</button>
-    <div class="receipt">
-        <h3>Receipt</h3>
-        <table>
-            <tbody>
-                <th>
-                    <td>Item</td>
-                    <td>Price</td>
-                </th>
-                <tr id="firstRow">
-                    <td>Subtotal: </td>
-                    <td class="subTotal"></td>
-                </tr>
-                <tr>
-                    <td>Sales Tax: </td>
-                    <td class="tax"></td>
-                </tr>
-                <tr>
-                    <td>Total: </td>
-                    <td class="finalTotal"></td>
-                </tr>
-                </tbody>
-            </table></br>
-            <span>Paid with </span><span class="paymentType"></span>
-            <p>Thanks for shopping at AKO!</p>
-    </div>
-    <div id="testing_"></div>
+</div>
+
 </body>
 </html>

@@ -10,7 +10,7 @@ class Cart {
         let i = this.cart.indexOf(newItem);
         let x = newItem.printName();
         let y = newItem.printPrice();
-        $("th").before('<tr><td>'+x+'</td><td>$'+y+'</td></tr>');
+        $(".firstRow").before('<tr><td>'+x+'</td><td>$'+y+'</td></tr>');
     }
     calcSubtotal() {
         for(let b in this.cart) {
@@ -45,6 +45,7 @@ let c = new Cart;
 
 $(document).ready(function(){
     $(".receipt").hide();
+    $(".checkoutForm").hide();
     $("#submitcash").on("click", function () {
     let paid = $("#cashPaid").val();
     console.log(paid);
@@ -57,10 +58,15 @@ $(document).ready(function(){
     })
     $(".submitCredit").on("click", function() {
         $(".receipt").show();
+        $(".checkoutForm").hide();
         $(".paymentType").text("card");
     })
     $("#checkout").on("click", function() {
         c.calcSubtotal();
+        $(".checkoutForm").show();
+    })
+    $(".exit").on("click", function() {
+        $(".checkoutForm").hide();
     })
 });
 
