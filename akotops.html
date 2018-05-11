@@ -18,6 +18,7 @@
   </header>
 
 <!-- Tops -->
+
     <div class="Products">
         <div class="top">
             <img src="replshirt.jpg"><br>
@@ -37,17 +38,18 @@
             <h2>$449</h2>
             <button onclick="c.add('Awesome Pink Shirt', 449);">Add to cart</button>
         </div>
-        <div class="top"></div>
+        <div class="top">
             <img src="shirt4.jpg"><br>
             <p>Bullet-proof button-up shirt. Pure 100% adamantium buttons.</p>
             <h2>$450</h2>
             <button onclick="c.add('One size fits all button up', 450);">Add to cart</button>
-        </div>
+            </div>
+        <!-- </div> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <div id="testing_"></div>
 
 <!-- Bottoms -->
-<div class="Products">
+<!-- <div class="Products1"> -->
         <div class="bottoms1">
             <img src="russelpants.jpg"><br>
             <p>Slim-fit eggshell white with zipper tchnology pockets. Includes 3 zippers. Allows you to walk on water and increases your nighttime visibility.</p><br>
@@ -66,14 +68,15 @@
             <h2>$479</h2>
             <button onclick="c.add('Camo pants',479)">Add to cart</button>
         </div>
-        <div class="bottoms4"></div>
+        <div class="bottoms4">
             <img src="pants4.jpg"><br>
             <p>Includes 3 zippers with the latest zipper technology. Hand-warming pockets.</p>
             <h2>$1200</h2>
             <button onclick="c.add('Jeans with zipper technology',1200)">Add to cart</button>
-        </div>
+            </div>
+        <!-- </div> -->
         <!-- Shoes -->
-        <div class="Products">
+        <!-- <div class="Products2"> -->
                 <div class="shoes1">
                     <img src="jordans.jpg"><br>
                     <p>The color is neurologically proven to stop haters in their tracks.</p><br>
@@ -92,11 +95,12 @@
                     <h2>$1,200</h2>
                     <button onclick="c.add('Gold Shoe', 1200)">Add to Cart</button>
                 </div>
-                <div class="shoes4"></div>
+                <div class="shoes4">
                     <img src="shoes4.jpg"><br>
                     <p>Official shoe of Lonzo Ball. Legendary upgrade on YO2. Motion Control technology. 7-day warranty.</p>
                     <h2>$495</h2>
                     <button onclick="c.add('Lonzo BBB Shoe',495)">Add to cart</button>
+                    </div>
                 </div>
 
                 <!-- Cart -->
@@ -129,7 +133,7 @@
     <h1>Checkout</h1>
     <h3>Paying with Cash</h3>
     <span>Total: $</span><span class="total"></span></br>
-    <input type="text" id="cashPaid" placeholder="Amount tendered"/> 
+    <input type="text" id="cashPaid" placeholder="Amount tendered"/>
     <button class="submitCash" id="submitcash">Submit</button></br>
     <span>Change: </span><span class="change"></span>
     </br>
