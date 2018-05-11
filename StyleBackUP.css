@@ -1,0 +1,141 @@
+@media only screen and (max-width: 600px) {
+    .cloth{
+      display: block;
+      text-align: center;
+      background-color: #eee;
+      color: black;
+      padding: 12px;
+      text-decoration: none;
+      margin: auto;
+      width: 100%;
+      cursor: pointer;
+      }
+      #logo{
+        text-align: center;
+        width: 25%;
+        margin-left:40%;
+        background-color: black;
+      }
+      .cloth:hover{
+        background-color: #A9A9A9;
+      }
+      img{
+        width: 100%;
+      }
+      .tops{
+        width: 35%;
+        text-align: center;
+        padding-left: 30%;
+    
+      }
+      #tops2{
+        text-align: center;
+        color: black;
+    
+      }
+      .item2{
+        width: 35%;
+        text-align: center;
+        padding-left: 30%;
+      }
+      #Bottoms2{
+        text-align: center;
+        color: black;
+      }
+      .item3{
+        width: 35%;
+        text-align: center;
+        padding-left: 30%;
+      }
+      #shoes{
+        text-align: center;
+        color: black;
+      }
+    }
+    body{
+      margin: auto;
+      background-color: black;
+      background-size: 50%;
+      background: linear-gradient(180deg, black 20%, white 10%);
+    }
+    
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .checkoutForm {
+      position: fixed;
+      z-index: 5;
+      text-align: center;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 5;
+      background-color: white;
+      width: 70%;
+      box-shadow: 0px 0px 10px;
+    }
+    .total {
+      padding-bottom: 5px;
+    }
+    .submitCredit {
+      margin: 15px;
+    }
+    .exit {
+      text-align: right;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .it {
+      width: 50%;
+    }
+    
+    
+    
+    @media only screen and (min-width: 600px) {
+      .cloth{
+        display: inline-block;
+        color: white;
+        background-color: white;
+        padding: 10px;
+      }
+      #logo{
+        width: 35%;
+        background-color: black;
+      }
+      img{
+        width: 100%;
+      }
+      header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+      }
+      .tops{
+        width: 25%;
+      }
+      .item2{
+        width: 25%;
+      }
+      .item3{
+        width: 25%;
+      }
+      .featuredItems{
+        display: inline-block;
+        justify-content: space-between;
+        text-align: center;
+        position: relative;
+      }
+      .cloth:hover{
+        background-color: #A9A9A9;
+      }
+      /* .classes{
+        display: inline;
+      } */
+      .tops2, .Bottoms2, .shoes{
+        display: inline-block;
+      }
+    
+    }
+    
