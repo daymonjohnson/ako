@@ -11,7 +11,6 @@ class Cart {
         let x = newItem.printName();
         let y = newItem.printPrice();
         $("th").before('<tr><td>'+x+'</td><td>$'+y+'</td></tr>');
-        this.calcSubtotal();
     }
     calcSubtotal() {
         for(let b in this.cart) {
@@ -20,6 +19,11 @@ class Cart {
         console.log(sum);
         $(".subTotal").text('$'+sum+'.00');
         $(".total").text(sum+'.00');
+        $(".tax").text('$'+sum*0.06);
+        let tax = sum*0.06;
+        console.log(tax);
+        let finalTotal = tax + sum;
+        $(".finalTotal").text('$'+finalTotal);
     }
 }
 
@@ -36,11 +40,8 @@ class Item {
         return this.price;
     }
 }
-
-
 let c = new Cart;
 
-c.calcSubtotal();
 
 $(document).ready(function(){
     $(".receipt").hide();
@@ -58,6 +59,9 @@ $(document).ready(function(){
         $(".receipt").show();
         $(".paymentType").text("card");
     })
+    $("#checkout").on("click", function() {
+        c.calcSubtotal();
+    })
 });
 
 //span items and p tags fadein
@@ -65,10 +69,3 @@ $(()=>{
   $("span").hide().fadeIn(1700);
   $("p").hide().fadeIn(3000);
 });
-
-// $("#testing").click(function(){
-//     $("#testing_").data("greeting", "Hello World");
-// });
-// $("#submitCash").click(function(){
-//     alert($("testing_").data("greeting"));
-// });
