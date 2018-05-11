@@ -1,4 +1,3 @@
-
 let sum=0;
 class Cart {
     constructor() {
@@ -7,7 +6,6 @@ class Cart {
     add(n, p) {
         let newItem = new Item(n, p);
         this.cart.push(newItem);
-        let i = this.cart.indexOf(newItem);
         let x = newItem.printName();
         let y = newItem.printPrice();
         $(".firstRow").before('<tr><td>'+x+'</td><td>$'+y+'</td></tr>');
@@ -59,7 +57,7 @@ $(document).ready(function(){
     $(".submitCredit").on("click", function() {
         $(".receipt").show();
         $(".checkoutForm").hide();
-        $(".paymentType").text("card");
+        $(".paymentType").text("card.");
     })
     $("#checkout").on("click", function() {
         c.calcSubtotal();
