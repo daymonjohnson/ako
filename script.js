@@ -14,13 +14,14 @@ class Cart {
         for(let b in this.cart) {
             sum += this.cart[b].price;
         }
-        console.log(sum);
+        // console.log(sum);
         $(".subTotal").text('$'+sum+'.00');
-        $(".total").text(sum+'.00');
         $(".tax").text('$'+sum*0.06);
         let tax = sum*0.06;
-        console.log(tax);
+        // console.log(tax);
         let finalTotal = tax + sum;
+        $(".total").text(finalTotal);
+        console.log(finalTotal);
         $(".finalTotal").text('$'+finalTotal);
     }
 }
