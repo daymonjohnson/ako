@@ -65,7 +65,39 @@ a{
   color: black;
 }
 
+<<<<<<< HEAD
 /* second media queri */
+=======
+.checkoutForm {
+  position: fixed;
+  z-index: 5;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 5;
+  background-color: white;
+  width: 70%;
+  box-shadow: 0px 0px 10px;
+}
+.total {
+  padding-bottom: 5px;
+}
+.submitCredit {
+  margin: 15px;
+}
+.exit {
+  text-align: right;
+  margin: 10px;
+  cursor: pointer;
+}
+.it {
+  width: 50%;
+}
+
+
+
+>>>>>>> 12aca4211307613338eb7c50c446c4a4cc3e0706
 @media only screen and (min-width: 600px) {
   body{
     margin-left: 100px;
