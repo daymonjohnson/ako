@@ -1,0 +1,124 @@
+@media only screen and (max-width: 600px) {
+.cloth{
+  display: block;
+  text-align: center;
+  background-color: #eee;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+  }
+  #logo{
+    text-align: center;
+    width: 25%;
+    margin-left:40%;
+    background-color: black;
+  }
+  .cloth:hover{
+    background-color: #A9A9A9;
+  }
+  img{
+    width: 100%;
+  }
+  .tops{
+    width: 35%;
+    text-align: center;
+    padding-left: 0%;
+  }
+  #tops2{
+    text-align: center;
+    color: black;
+
+  }
+  .item2{
+    width: 35%;
+    text-align: center;
+    padding-left: 30%;
+  }
+  #Bottoms2{
+    text-align: center;
+    color: black;
+  }
+  .item3{
+    width: 35%;
+    text-align: center;
+    padding-left: 30%;
+  }
+  #shoes{
+    text-align: center;
+    color: black;
+  }
+}
+body{
+  margin: auto;
+  background-color: black;
+  background-size: 50%;
+  background: linear-gradient(180deg, black 20%, white 10%);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.featuredItems{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.featuredHeadings{
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 600px) {
+  .cloth{
+    display: inline-block;
+    color: white;
+    background-color: white;
+    padding: 10px;
+  }
+  #logo{
+    width: 35%;
+    background-color: black;
+  }
+  img{
+    width: 100%;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .tops{
+
+    width: 80%;
+
+  }
+
+  .featuredItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 95%;
+  }
+  .featuredHeadings{
+    width:30%;
+  }
+  .cloth:hover{
+    background-color: #A9A9A9;
+  }
+  /* .classes{
+    display: inline;
+  } */
+  .tops2, .Bottoms2, .shoes{
+    display: inline-block;
+  }
+}
+#bbb{
+  height: 50%;
+}
+#redshoe{
+  height: 50%;
+}
